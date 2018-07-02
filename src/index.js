@@ -1,19 +1,13 @@
 import _ from 'lodash';
 import './style.css';
-import Icon from './img1.jpg';
 
 function component() {
     var element = document.createElement('div');
 
     // Lodash，现在由此脚本导入
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = _.join(['Hello', 'webpack', '你好，世界'], ' ');
     element.classList.add('hello');
 
-    // 将图像添加到我们现有的 div。
-    var myIcon = new Image();
-    myIcon.src = Icon;
-
-    element.appendChild(myIcon);
 
     return element;
 }
