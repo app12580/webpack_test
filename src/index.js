@@ -1,13 +1,16 @@
 import _ from 'lodash';
 import './style.css';
+import Data from './data.xml';
+
 
 function component() {
     var element = document.createElement('div');
 
-    // Lodash，现在由此脚本导入
-    element.innerHTML = _.join(['Hello', 'webpack', '你好，世界'], ' ');
+    // Lodash, now imported by this script
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     element.classList.add('hello');
 
+    console.log(Data);
 
     return element;
 }
