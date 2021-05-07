@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8"
   },
